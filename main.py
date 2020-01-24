@@ -16,6 +16,3 @@ while True:
         time.sleep(13)
   else:
      relay.value(0)
-  
-  
-      
