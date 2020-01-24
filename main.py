@@ -1,4 +1,3 @@
-
 import urequests
 import network
 import time
@@ -10,9 +9,9 @@ import ConnectWiFi
 ConnectWiFi.connect()
 print ('booting up')
 while True:
-  checkbal = urequests.get('https://blockchain.info/balance?active=$address')
+  checkbal = urequests.get('')
   time.sleep(15)
-  recheckbal = urequests.get('https://blockchain.info/balance?active=$address')
+  recheckbal = urequests.get('')
   if checkbal < recheckbal:
       if recheckbal - checkbal > 0.001:
         relay.value(1)
