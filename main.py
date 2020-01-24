@@ -8,10 +8,10 @@ import ConnectWiFi
 ConnectWiFi.connect()
 while True:
   checkbal = urequests.get('https://blockchain.info/q/addressbalance/14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR?confirmations=6')
-  checkbal = int(checkbal)
+  checkbal = float(checkbal)
   time.sleep(13)
   recheckbal = urequests.get('https://blockchain.info/q/addressbalance/14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR?confirmations=6')
-  recheckbal = int(recheckbal)
+  recheckbal = float(recheckbal)
   if (recheckbal > checkbal):
       if (recheckbal - checkbal > 0.001):
           relay.value(1)
