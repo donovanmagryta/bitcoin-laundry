@@ -4,7 +4,6 @@ import time
 import machine
 from machine import Pin
 relay = Pin(12, Pin.OUT)
-
 import ConnectWiFi
 ConnectWiFi.connect()
 print ('booting up')
