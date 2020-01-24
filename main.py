@@ -13,7 +13,7 @@ while True:
   recheckbal = urequests.get('https://blockchain.info/q/addressbalance/14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR?confirmations=6')
   recheckbal = float(recheckbal)
   if (recheckbal > checkbal):
-      if (recheckbal - checkbal > 0.001):
+      if (recheckbal - checkbal > 0.0002):
           relay.value(1)
           time.sleep(600)
   else:
