@@ -1,3 +1,5 @@
+address = "14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR"
+url = "https://blockchain.info/q/addressbalance/" + address + "?confirmations=6"
 import urequests
 import network
 import time
@@ -7,10 +9,10 @@ relay = Pin(12, Pin.OUT)
 import ConnectWiFi
 ConnectWiFi.connect()
 while True:
-  checkbal = urequests.get('https://blockchain.info/q/addressbalance/14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR?confirmations=6')
+  checkbal = urequests.get(url)
   checkbal = float(checkbal)
   time.sleep(13)
-  recheckbal = urequests.get('https://blockchain.info/q/addressbalance/14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR?confirmations=6')
+  recheckbal = urequests.get(url)
   recheckbal = float(recheckbal)
   if (recheckbal > checkbal):
       if (recheckbal - checkbal > 0.0002):
