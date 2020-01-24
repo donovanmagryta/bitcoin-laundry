@@ -14,7 +14,7 @@ while True:
   recheckbal = int(recheckbal)
   if (checkbal < recheckbal):
       if (recheckbal - checkbal > 0.001):
-        relay.value(1)
-        time.sleep(600)
+          relay.value(1)
+          time.sleep(600)
   else:
      relay.value(0)
