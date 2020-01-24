@@ -1,4 +1,4 @@
-address = "14wRAXh2Qrm84vUwuJ4N9xzUw6WXtqC6eR"
+address = ""
 url = "https://blockchain.info/q/addressbalance/" + address + "?confirmations=6"
 import urequests
 import network
