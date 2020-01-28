@@ -13,6 +13,8 @@ Edit WiFi credentials in connectWiFi.py
 
 Edit website URL to match your web host site in both .php files.
 
+Edit email in paypalbutton.php file to match your paypal business account email.
+
 Upload.py desiredfiles to your switch.
 
 Upload .php files to your web host.
