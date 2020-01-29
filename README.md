@@ -23,8 +23,6 @@ esptool.py --chip esp8266 erase_flash
 esptool.py --chip esp8266 --port COM11 write_flash --flash_mode dout --flash_size detect 0x0 micropython.bin
 
 
-Rename bitcoin.py to "main.py" if you want to use BTC instead of paypal.
-
 edit parameters in each scripts: 
 
 edit bitcoin address in main.py if you are not using paypal.
