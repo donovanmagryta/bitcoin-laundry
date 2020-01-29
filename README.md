@@ -1,7 +1,9 @@
 # bitcoin-laundry
 Bitcoin powered appliances using Sonoff Basic, MicroPython firmware, and Blockchain.info plain text API
+
 OR
-Paypal powered using Sonoff Basic, MicroPython firmware, PHP server and PayPal IPN service
+
+Paypal powered using Sonoff Basic, MicroPython firmware, PHP web host, and PayPal IPN service
 
 SETUP:
 
