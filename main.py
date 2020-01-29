@@ -1,4 +1,3 @@
-
 deviceid = "1"
 mode = "paypal"
 address = "na"
