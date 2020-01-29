@@ -25,9 +25,13 @@ esptool.py --chip esp8266 --port COM11 write_flash --flash_mode dout --flash_siz
 
 Rename bitcoin.py to "main.py" if you want to use BTC instead of paypal.
 
-edit paramenters: 
+edit parameters in each scripts: 
 
-edit bitcoin address in bitcoin.py if you are not using paypal.
+edit bitcoin address in main.py if you are not using paypal.
+
+edit mode in main.py
+
+for bitcoin mode, delay parameter must set to be greater than 13 seconds or else blockchain.info's API will reject queries.
 
 Edit device id name in that file.
 
