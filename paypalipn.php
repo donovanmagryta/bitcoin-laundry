@@ -81,14 +81,16 @@ if (strcmp ($res, "VERIFIED") == 0) {
 
   if ($payment_status == "Completed") {
     if (is_numeric($item_number)) {
-      $iotappliance = $item_number;
-  $file = fopen("iot.json","a+");
+      if (isset($item_number)) {
+  $iotfile = fopen("iot.json","a+");
   $json = file_get_contents('iot.json');
   $data = json_decode($json, true);
-  $data[$iot]["revenue"]= $iot + $payment_amount;
+  $rev = $data[$item_number]["revenue"] + $payment_amount;
+  $data[$item_number]["revenue"] = $rev;
   $newjson = json_encode($data);
   file_put_contents('iot.json', $newjson);
-  fclose($file);
+  fclose($iotfile);
+}
  }
 }
 }
