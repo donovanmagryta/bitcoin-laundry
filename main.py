@@ -1,11 +1,16 @@
 
 deviceid = "1"
+mode = "paypal"
+address = "na"
 delay = "13"
 ontime = "600"
 amount = "0.25"
 host = "http://example.com"
 ipnfilename = "/paypalipn.php"
-url = host + ipnfilename + "?iot=" + deviceid
+if (mode == "bitcoin"):
+  url = "https://blockchain.info/q/addressbalance/" + address + "?confirmations=6"
+if (mode == "paypal"):
+  url = host + ipnfilename + "?iot=" + deviceid
 import urequests
 import network
 import time
