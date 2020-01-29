@@ -1,27 +1,28 @@
 # bitcoin-laundry
-Bitcoin powered appliances using Sonoff Basic R3, MicroPython firmware, and Blockchain.info plain text API
+Bitcoin powered appliances using Sonoff Basic, MicroPython firmware, and Blockchain.info plain text API
 OR
-Paypal powered using PHP server and PayPal IPN.
+Paypal powered using Sonoff Basic, PHP server and PayPal IPN.
 
 Flash micropython firmware onto Sonoff switch.
 
-Rename bitcoin.py or paypal.py to "main.py" depending on which one you use.
+Rename bitcoin.py to "main.py" if you want to use BTC instead of paypal.
 
 Edit device id name in that file.
 
 Edit WiFi credentials in connectWiFi.py
 
-Edit website URL to match your web host site in both .php files.
+Edit website URL to match your web host site in both all files.
 
 Edit email in paypalbutton.php file to match your paypal business account email.
 
-Upload.py desiredfiles to your switch.
+Upload the preferred .py files to your sonoff.
 
-Upload .php files to your web host.
+For paypal, Upload .php files to your web host.
 
 
 
 
 Appliance examples: microwave ovens, coffee makers, mood lighting, vending machines.
 
-Untested as of 1/24/2020
+Bitcoin mode untested as of 1/24/2020
+Paypal mode confirmed working as of 1/29/2020
