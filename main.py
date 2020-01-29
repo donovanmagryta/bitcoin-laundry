@@ -36,6 +36,6 @@ while True:
       relay.value(1)
       time.sleep(ontime)
       print("on for 600 seconds")
-  else:
+  else: 
      relay.value(0)
      print("off")
