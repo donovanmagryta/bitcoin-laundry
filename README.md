@@ -19,6 +19,8 @@ Upload the preferred .py files to your sonoff.
 
 For paypal, Upload .php files to your web host.
 
+The payment URL must end in "?iot=" and then your switch's selected device ID number. For example: https://example.com/paypalbutton.php?iot=1
+
 
 
 
