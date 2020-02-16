@@ -21,6 +21,8 @@ Download anaconda python distribution and make sure to enable "add to path".
 
 Download uPyCraft.
 
+install drivers for usb to ttl adapter
+
 3. HARDWARE PREP
 
 solder header pins onto Sonoff to enable connection to USB-to-TTL-adapter.
