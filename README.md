@@ -12,7 +12,7 @@ SETUP:
 
 1. GET PARTS
 
-get a sonoff basic, wire strippers, screwdriver, USB to TTL adapter, and female jumper wires.
+get a sonoff basic, wire strippers, screwdriver, USB to TTL adapter, and female jumper wires, header pins, soldering iron, solder.
 
 
 2. SOFTWARE PREP
