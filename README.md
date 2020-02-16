@@ -6,11 +6,15 @@ OR
 Paypal powered using Sonoff Basic, MicroPython firmware, PHP web host, and PayPal IPN service
 
 SETUP:
-
+1. SOFTWARE PREP
 
 Download anaconda python distribution and make sure to enable "add to path".
 
+2. HARDWARE PREP
+
 solder header pins onto Sonoff to enable connection to USB-to-TTL-adapter.
+
+3. FIRMWARE INSTALL
 
 flash micropython with anaconda python from windows cmd prompt:
 
@@ -24,6 +28,7 @@ esptool.py --chip esp8266 erase_flash
 
 esptool.py --chip esp8266 --port COM11 write_flash --flash_mode dout --flash_size detect 0x0 micropython.bin
 
+4. ADJUST CODE PARAMETERS
 
 edit parameters in each scripts: 
 
@@ -41,9 +46,13 @@ Edit website URL to match your web host site in both all files.
 
 Edit paypal email in paypalbutton.php file to match your paypal business account email.
 
+5. UPLOAD CODE
+
 Upload the preferred .py files to your sonoff.
 
 For paypal, Upload both .php files to your web host.
+
+6. SETUP PAYPAL
 
 in paypal business account settings, point ipn calls to your /paypalipn.php url.
 
