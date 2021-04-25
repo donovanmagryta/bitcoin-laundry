@@ -61,6 +61,8 @@ Edit website URL to match your web host site in both all files.
 
 Edit paypal email in paypalbutton.php file to match your paypal business account email.
 
+Edit payment amount in each script.
+
 6. UPLOAD CODE
 
 using upycraft, enable webrepl.
